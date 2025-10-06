@@ -5,6 +5,7 @@ import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home";
 import ErrorPage from "../Pages/ErrorPage";
 import WishList from "../Pages/WishList";
+import ProductsDetails from "../Pages/ProductsDetails";
 
 
 const router = createBrowserRouter([
@@ -16,7 +17,6 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        loader: ()=> fetch('./furnitureData.json'),
         element: <Home></Home>,
       },
       {
@@ -27,6 +27,10 @@ const router = createBrowserRouter([
         path: "/whishList",
         element: <WishList></WishList>,
       },
+      {
+        path: '/product/:id',
+        element: <ProductsDetails/>
+      }
     ],
   },
   // {
