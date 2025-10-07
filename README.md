@@ -1,16 +1,64 @@
-# React + Vite
+# HomDeco
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern front-end application for home decor (or interior design) showcasing using React + Vite.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## React Compiler
+- [About](#about)  
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Getting Started](#getting-started)  
+  - [Prerequisites](#prerequisites)  
+  - [Installation](#installation)  
+  - [Running the App](#running-the-app)  
+- [Project Structure](#project-structure)  
+- [Scripts](#scripts)  
+- [Contributing](#contributing)  
+- [License](#license)  
+- [Contact](#contact)  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## About
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**HomDeco** is a frontend web application built with React and Vite. It is designed to showcase home decor items, interior design concepts, or a portfolio of decor ideas.
+
+---
+
+## Features
+
+- Responsive UI  
+- Fast development experience with Vite  
+- ESLint integration for code quality  
+- Clean and modular component structure  
+- Easy to extend with additional pages, APIs, etc.  
+
+---
+
+## Tech Stack
+
+- **Framework / Tooling**: React + Vite  
+- **Linting**: ESLint  
+- **Build / Dev Server**: Vite  
+- **Package Manager**: npm (or you may use yarn / pnpm)  
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js (v14+ recommended)  
+- npm (or yarn / pnpm)  
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ShahriarRefat0/HomDeco.git
+   cd HomDeco
