@@ -3,12 +3,12 @@ import React from 'react';
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10">
+      <footer className="footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10 mt-20">
         <nav className="grid grid-flow-col gap-4">
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
+          <a className="link link-hover">Offers</a>
+          <a className="link link-hover">Feedback</a>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">
@@ -49,8 +49,7 @@ const Footer = () => {
         </nav>
         <aside>
           <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by ACME
-            HomeDeco
+            Copyright © {new Date().getFullYear()} - All right reserved by              HomeDeco
           </p>
         </aside>
       </footer>

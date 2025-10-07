@@ -35,18 +35,20 @@ const ProductsDetails = () => {
 
   return (
     <div>
-      <div className="card bg-base-100 border-1 border-gray-300  w-11/12 mx-auto">
+      <div className="card bg-base-100 border-1 border-gray-300  w-11/12 mx-auto my-20">
         <figure className="h-[500px] overflow-hidden p-5">
           <img className="w-full object-cover" src={image} alt="Shoes" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{name}</h2>
           <p>Details: {description}</p>
-          <p>Category: {category}</p>
-          <p>Price: ${price}</p>
+          <p>Category:  {category}</p>
+          <p>
+            Price: <span className='font-bold'>${price}</span>{" "}
+          </p>
           <div className="card-actions justify-end">
             <Link
-              onClick={()=>updateList(product)}
+              onClick={() => updateList(product)}
               to={`/product/${id}`}
               className="btn btn-outline"
             >
