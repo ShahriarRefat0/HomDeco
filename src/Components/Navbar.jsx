@@ -40,7 +40,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <Link to="/" className="text-2xl font-bold">
+          <Link to="/" className="text-2xl font-bold flex justify-center items-center"> <span><img className='w-18' src="/logo-1.png" alt="" /></span>
             HomeDeco
           </Link>
         </div>

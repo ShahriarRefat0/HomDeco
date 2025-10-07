@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Bar, BarChart, CartesianGrid, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { loadWishlist, removeFromWishlist } from '../Utils/localStorage';
+import { toast } from 'react-toastify';
+
 
 const WishList = () => {
   const [wishList, setWishList] = useState(() => loadWishlist());
@@ -21,9 +23,11 @@ if(!wishList.length) return <p className='text-center mt-40 text-2xl font-semibo
   })()
 
 
-const handleRemove = (id) => {
+  const handleRemove = (id) => {
+  
   const updated = removeFromWishlist(id);
-  setWishList(updated);
+    setWishList(updated);
+    toast.info("Remove from wishlist");
 };
 
 
