@@ -6,7 +6,7 @@ import { updateList } from '../Utils/localStorage';
 const ProductsDetails = () => {
 
   const {id} = useParams()
-  const { products, loading, error } = useProducts()
+  const { products, loading } = useProducts()
 
   const product = products.find((product) => product.id === parseInt(id))
   

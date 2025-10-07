@@ -47,7 +47,7 @@ const handleRemove = (id) => {
   return (
     <div className="space-y-6 w-11/12 mx-auto">
       <div className="flex justify-between py-5 items-center">
-        <h1 className="text-3xl font-semibold">
+        <h1 className="md:text-3xl text-xl font-semibold ">
           Wishlist{" "}
           <span className="text-sm text-gray-500">
             ({sortedItem.length}) Products Found.

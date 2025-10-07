@@ -16,7 +16,7 @@ const {products, loading} = useProducts()
   return (
     <div>
       <div className="flex justify-between py-5 items-center w-11/12 mx-auto mt-8">
-        <h1 className="text-3xl font-semibold">
+        <h1 className="md:text-3xl text-xl font-semibold">
           All Products{" "}
           <span className="text-sm text-gray-500 ">
             ({searchedProducts.length}) Products Found
