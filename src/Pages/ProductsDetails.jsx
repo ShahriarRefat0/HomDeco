@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router';
 import useProducts from '../Hooks/useProducts';
 import { updateList } from '../Utils/localStorage';
+import SkeletonForDetails from '../Components/SkeletonForDetails';
 
 const ProductsDetails = () => {
 
@@ -10,7 +11,7 @@ const ProductsDetails = () => {
 
   const product = products.find((product) => product.id === parseInt(id))
   
-  if(loading){return <p>Loading...</p>}
+  if(loading){return <SkeletonForDetails></SkeletonForDetails>}
   const { name, category, image, price, description } = product;
   
 
@@ -35,9 +36,9 @@ const ProductsDetails = () => {
 
   return (
     <div>
-      <div className="card bg-base-100 border-1 border-gray-300  w-11/12 mx-auto my-20">
-        <figure className="h-[500px] overflow-hidden p-5">
-          <img className="w-full object-cover" src={image} alt="Shoes" />
+      <div className="card bg-base-100 border-1 border-gray-300  w-11/12 mx-auto my-20 pt-5">
+        <figure className="h-[500px] overflow-hidden p-5 ">
+          <img className="w-full object-cover " src={image} alt="Shoes" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{name}</h2>
