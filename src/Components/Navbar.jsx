@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router';
+import React from "react";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   return (
@@ -40,7 +40,14 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <Link to="/" className="text-2xl font-bold flex justify-center items-center"> <span><img className='w-18' src="/logo-1.png" alt="" /></span>
+          <Link
+            to="/"
+            className="md:text-2xl font-bold flex justify-center items-center"
+          >
+            {" "}
+            <span>
+              <img className="md:w-18 w-10" src="/logo-1.png" alt="" />
+            </span>
             HomeDeco
           </Link>
         </div>
